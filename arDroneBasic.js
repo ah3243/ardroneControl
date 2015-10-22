@@ -1,22 +1,22 @@
-// Assign requirements
-var fs = require('fs'),
-   process = require('child_process'),
-   input = 0,
-   iteration = 0;
+// Parent Program
+var iteration = 0;
 
-while(true){
-  try{
-    var script = process.spawnSync('sh', ['myscript.sh']);
-    console.log("the status code is:" + script.status);
-    input = script.status;
-    console.log("This is the savedStatus code: " + input);
-    var imageCol = process.spawnSync('node', ['savePNG.js']);
-    imageName = imageCol.status;
-  }
-  catch(err){
-    console.error(err.stack);
-  }
-  console.log("Another loop iteration" + iteration);
+function startProgram(){
+  var exec  = require('child_process').exec;
+    exec('sh myscript.sh', function(error, stdout, stderr){
+      console.log('stdout: ' + stdout);
+      console.log('stderr: ' + stderr);
+      if(error += null){
+        console.log('exec ERROR: ' + error);
+      }
 
-iteration++;
+      console.log('Getting Image');
+      exec('node savePNG.js',function(error, stdout, stderr){
+        console.log('IMage collected..');
+      });
+    });
 }
+
+setInterval(function(){
+  startProgram();
+}, 5000);
