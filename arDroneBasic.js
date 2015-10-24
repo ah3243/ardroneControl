@@ -2,10 +2,15 @@
     var iteration = 0;
     var exec  = require('child_process').exec;
 
+    // for emergancy
+    var keypress = require('keypress');
+
     // PNG Vars
     var arDrone = require('ar-drone');
     var client = arDrone.createClient();
     var fs = require('fs');
+
+    client.disableEmergency();
 
     var pngStream = client.getPngStream();
     var frameCounter = 0;
@@ -39,13 +44,14 @@
 //      setNav(ref, stdout);
       console.log('Script done stdout: ' + stdout);
       decre(ref);
+
     }
     // Run Opencv Script decrementing the number of current processes running by 1 when completed
     function opencvScript(exec, imagePath, ref, callback){
       // Call the shell script
       exec('sh ~/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/9_Testing.sh ' + imagePath, function(error, stdout, stderr){
         console.log('stdout:..' + stdout);
-        console.log('stderr:..' + stderr);
+//        console.log('stderr:..' + stderr);
         if(error += null){
           console.log('exec ERROR: ' + error);
         }
@@ -71,7 +77,7 @@
         }
         console.log(imageName); // Output imagePath for use in parent
         // Start opencv Script
-        //opencvScript(exec, imageName, ref);
+        opencvScript(exec, imageName, ref);
       });
     };
 
@@ -90,8 +96,9 @@
         .on('error', console.log)
         .on('data', function(pngBuffer, something) {
             if(ref.value==0){
-            startProgram(exec, pngBuffer, frameCounter, ref);
-            frameCounter++;
+              console.log("\n\n\nthis is the refVAL: " + ref.value);
+              startProgram(exec, pngBuffer, frameCounter, ref);
+              frameCounter++;
           }
         });
     });
