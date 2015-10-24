@@ -42,7 +42,8 @@
     // Set number of processes flag after Opencv script completion
     function extraArgs(ref, stdout, stderr, callback){
 //      setNav(ref, stdout);
-      console.log('Script done stdout: ' + stdout);
+      console.log('Script stderr:..' + stderr);
+      console.log('Script stdout: ' + stdout);
       decre(ref);
 
     }
@@ -50,8 +51,6 @@
     function opencvScript(exec, imagePath, ref, callback){
       // Call the shell script
       exec('sh ~/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/9_Testing.sh ' + imagePath, function(error, stdout, stderr){
-        console.log('stdout:..' + stdout);
-//        console.log('stderr:..' + stderr);
         if(error += null){
           console.log('exec ERROR: ' + error);
         }
@@ -69,13 +68,11 @@
       // Generate imgFileName
       var imageDir = '/home/james-tt/Desktop/MyFilterbankCode/ARDRONE/'; // Image FolderPath partial
       var imageName = imageDir + 'Images/frame' + frameCounter + '.png';
-      console.log('Image Location: ' + imageName + "\n");
       // Write file to dir
       fs.writeFile(imageName, pngBuffer, function(err) {
         if (err) {
           console.log('Error saving PNG: ' + err);
         }
-        console.log(imageName); // Output imagePath for use in parent
         // Start opencv Script
         opencvScript(exec, imageName, ref);
       });
@@ -96,7 +93,7 @@
         .on('error', console.log)
         .on('data', function(pngBuffer, something) {
             if(ref.value==0){
-              console.log("\n\n\nthis is the refVAL: " + ref.value);
+              console.log('\nNEWTEST');
               startProgram(exec, pngBuffer, frameCounter, ref);
               frameCounter++;
           }
