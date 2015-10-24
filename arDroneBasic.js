@@ -1,21 +1,97 @@
     // Parent Program
     var iteration = 0;
+    var exec  = require('child_process').exec;
 
-    function startProgram(){
-      var exec  = require('child_process').exec;
-        exec('sh myscript.sh', function(error, stdout, stderr){
-          console.log('stdout: ' + stdout);
-          console.log('stderr: ' + stderr);
-          if(error += null){
-            console.log('exec ERROR: ' + error);
-          }
+    // PNG Vars
+    var arDrone = require('ar-drone');
+    var client = arDrone.createClient();
+    var fs = require('fs');
 
-          console.log('Getting Image');
-          exec('node savePNG.js',function(error, stdout, stderr){
-            console.log('IMage collected..');
-          });
-        });
+    var pngStream = client.getPngStream();
+    var frameCounter = 0;
+
+
+    var ref = {value: 0,
+              nav:0,
+              test:true,
+              fwdDis:0,
+              rotAng:0};
+
+    //////////////////////////////////////////////////////
+    //////////////////// FUNCTIONS ///////////////////////
+    //////////////////////////////////////////////////////
+    function setNav(x, output){
+      x.nav = output;
+      console.log('This is the output:..' + x.nav);
     }
-    setInterval(function(){
-      startProgram();
-    }, 5000);
+
+    // Increment input objects value by 1
+    function incre(x){
+      x.value++;
+    }
+    // Decrement input objects value by 1
+    function decre(x){
+      x.value--;
+    }
+
+    // Set number of processes flag after Opencv script completion
+    function extraArgs(ref, stdout, stderr, callback){
+//      setNav(ref, stdout);
+      console.log('Script done stdout: ' + stdout);
+      decre(ref);
+    }
+    // Run Opencv Script decrementing the number of current processes running by 1 when completed
+    function opencvScript(exec, imagePath, ref, callback){
+      // Call the shell script
+      exec('sh ~/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/9_Testing.sh ' + imagePath, function(error, stdout, stderr){
+        console.log('stdout:..' + stdout);
+        console.log('stderr:..' + stderr);
+        if(error += null){
+          console.log('exec ERROR: ' + error);
+        }
+
+        // Run callback when script is done
+        extraArgs(ref ,stdout, stderr, callback);
+      });
+    }
+
+    // Get a current png image from stream and pass path to and run opencv script
+    function startProgram(exec, pngBuffer, frameCounter, ref){
+      // increment number of processes running by one
+      incre(ref);
+
+      // Generate imgFileName
+      var imageDir = '/home/james-tt/Desktop/MyFilterbankCode/ARDRONE/'; // Image FolderPath partial
+      var imageName = imageDir + 'Images/frame' + frameCounter + '.png';
+      console.log('Image Location: ' + imageName + "\n");
+      // Write file to dir
+      fs.writeFile(imageName, pngBuffer, function(err) {
+        if (err) {
+          console.log('Error saving PNG: ' + err);
+        }
+        console.log(imageName); // Output imagePath for use in parent
+        // Start opencv Script
+        //opencvScript(exec, imageName, ref);
+      });
+    };
+
+    //////////////////////////////////////////////////////
+    //////////////////// PROGRAM /////////////////////////
+    //////////////////////////////////////////////////////
+
+
+    exec('sh ~/Desktop/MyFilterbankCode/ARDRONE/prepScript.sh ', function(err, stdout, stderr){
+      console.log(stdout);
+      if(err){
+        console.log('ERROR with prepScript: ' + err);
+      }
+      console.log(stdout);
+      pngStream
+        .on('error', console.log)
+        .on('data', function(pngBuffer, something) {
+            if(ref.value==0){
+            startProgram(exec, pngBuffer, frameCounter, ref);
+            frameCounter++;
+          }
+        });
+    });
