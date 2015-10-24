@@ -50,7 +50,7 @@
     // Run Opencv Script decrementing the number of current processes running by 1 when completed
     function opencvScript(exec, imagePath, ref, callback){
       // Call the shell script
-      exec('sh ~/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/9_Testing.sh ' + imagePath, function(error, stdout, stderr){
+      exec('sh ~/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/9_Testing.sh ' + imagePath, function(error, stdout, stderr){
         if(error += null){
           console.log('exec ERROR: ' + error);
         }
