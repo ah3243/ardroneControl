@@ -2,7 +2,7 @@
 #!/bin/bash/
 
 # Change the CD to Build directory
-cd ../multiDimen/TESTINGCMAKE/build
+cd OpenCVMod/build
 
 #rm -rf *
 # Build
@@ -10,7 +10,7 @@ cmake ..
 make
 
 #Move to Image Folder
-cd ../../../ARDRONE/
+cd ../../
 
 echo
 echo This is the current folder

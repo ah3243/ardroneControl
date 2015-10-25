@@ -1,10 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o"
-  "CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o"
-  "CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o"
-  "CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o"
-  "CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o"
-  "CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o"
+  "CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o"
+  "CMakeFiles/singleImgEval.dir/filterbank.cpp.o"
   "singleImgEval.pdb"
   "singleImgEval"
 )

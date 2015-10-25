@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE
+CMAKE_SOURCE_DIR = /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build
+CMAKE_BINARY_DIR = /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -73,9 +73,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/CMakeFiles /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build/CMakeFiles /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -115,149 +115,53 @@ singleImgEval/fast:
 	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/build
 .PHONY : singleImgEval/fast
 
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.o: home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.o
+filterbank.o: filterbank.cpp.o
+.PHONY : filterbank.o
 
 # target to build an object file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o
+filterbank.cpp.o:
+	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/filterbank.cpp.o
+.PHONY : filterbank.cpp.o
 
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.i: home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.i
+filterbank.i: filterbank.cpp.i
+.PHONY : filterbank.i
 
 # target to preprocess a source file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.i:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.i
+filterbank.cpp.i:
+	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/filterbank.cpp.i
+.PHONY : filterbank.cpp.i
 
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.s: home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.s
+filterbank.s: filterbank.cpp.s
+.PHONY : filterbank.s
 
 # target to generate assembly for a file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.s:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.s
+filterbank.cpp.s:
+	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/filterbank.cpp.s
+.PHONY : filterbank.cpp.s
 
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.o: home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.o
+singleImgEval.o: singleImgEval.cpp.o
+.PHONY : singleImgEval.o
 
 # target to build an object file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o
+singleImgEval.cpp.o:
+	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o
+.PHONY : singleImgEval.cpp.o
 
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.i: home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.i
-
-# target to preprocess a source file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.i:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.i
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.s: home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.s
-
-# target to generate assembly for a file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.s:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.s
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.o: home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.o
-
-# target to build an object file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.i: home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.i
+singleImgEval.i: singleImgEval.cpp.i
+.PHONY : singleImgEval.i
 
 # target to preprocess a source file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.i:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.i
+singleImgEval.cpp.i:
+	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/singleImgEval.cpp.i
+.PHONY : singleImgEval.cpp.i
 
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.s: home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.s
-
-# target to generate assembly for a file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.s:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.s
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.o: home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.o
-
-# target to build an object file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.i: home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.i
-
-# target to preprocess a source file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.i:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.i
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.s: home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.s
+singleImgEval.s: singleImgEval.cpp.s
+.PHONY : singleImgEval.s
 
 # target to generate assembly for a file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.s:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.s
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.o: home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.o
-
-# target to build an object file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.i: home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.i
-
-# target to preprocess a source file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.i:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.i
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.s: home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.s
-
-# target to generate assembly for a file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.s:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.s
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.o: home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.o
-
-# target to build an object file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.i: home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.i
-
-# target to preprocess a source file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.i:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.i
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.i
-
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.s: home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.s
-
-# target to generate assembly for a file
-home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.s:
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.s
-.PHONY : home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.s
+singleImgEval.cpp.s:
+	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/singleImgEval.cpp.s
+.PHONY : singleImgEval.cpp.s
 
 # Help Target
 help:
@@ -268,24 +172,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... singleImgEval"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.o"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.i"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.s"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.o"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.i"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.s"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.o"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.i"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.s"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.o"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.i"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.s"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.o"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.i"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.s"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.o"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.i"
-	@echo "... home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.s"
+	@echo "... filterbank.o"
+	@echo "... filterbank.i"
+	@echo "... filterbank.s"
+	@echo "... singleImgEval.o"
+	@echo "... singleImgEval.i"
+	@echo "... singleImgEval.s"
 .PHONY : help
 
 

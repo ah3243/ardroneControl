@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.h
+/home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/filterbank.h
 
-/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp
+/home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/singleImgEval.cpp
 opencv2/highgui/highgui.hpp
 -
 opencv2/imgproc/imgproc.hpp
@@ -34,7 +34,7 @@ thread
 map
 -
 filterbank.h
-/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.h
+/home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/filterbank.h
 
 /usr/local/include/opencv2/calib3d/calib3d.hpp
 opencv2/core/core.hpp

@@ -262,7 +262,7 @@ string avgIterResults(map<string, vector<double> > results){
 // Import TextonDictionary
 void importTexDict(Mat &dictionary, vector<float> &m){
   // Load TextonDictionary
-  FileStorage fs("/home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/dictionary.xml",FileStorage::READ);
+  FileStorage fs("/home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build/dictionary.xml",FileStorage::READ);
   if(!fs.isOpened()){
     ERR("Unable to open Texton Dictionary.");
     exit(-1);
@@ -274,7 +274,7 @@ void importTexDict(Mat &dictionary, vector<float> &m){
 // Get Class Models
 void importClassModels(map<string, vector<Mat> >& savedClassHist){
   // Load in Class Histograms(Models)
-  FileStorage fs3("/home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/models.xml", FileStorage::READ);
+  FileStorage fs3("/home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build/models.xml", FileStorage::READ);
   FileNode fn = fs3["classes"];
   if(fn.type() == FileNode::MAP){
 

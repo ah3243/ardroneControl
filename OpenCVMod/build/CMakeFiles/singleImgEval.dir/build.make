@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE
+CMAKE_SOURCE_DIR = /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build
+CMAKE_BINARY_DIR = /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/singleImgEval.dir/depend.make
@@ -49,162 +49,62 @@ include CMakeFiles/singleImgEval.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/singleImgEval.dir/flags.make
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o: CMakeFiles/singleImgEval.dir/flags.make
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o: /home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o -c /home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp
+CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o: CMakeFiles/singleImgEval.dir/flags.make
+CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o: ../singleImgEval.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o -c /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/singleImgEval.cpp
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp > CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.i
+CMakeFiles/singleImgEval.dir/singleImgEval.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/singleImgEval.dir/singleImgEval.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/singleImgEval.cpp > CMakeFiles/singleImgEval.dir/singleImgEval.cpp.i
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.s
+CMakeFiles/singleImgEval.dir/singleImgEval.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/singleImgEval.dir/singleImgEval.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/singleImgEval.cpp -o CMakeFiles/singleImgEval.dir/singleImgEval.cpp.s
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o.requires:
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o.requires
+CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o.requires:
+.PHONY : CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o.requires
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o.provides: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o.requires
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o.provides.build
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o.provides
+CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o.provides: CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o.requires
+	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o.provides.build
+.PHONY : CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o.provides
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o.provides.build: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o
+CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o.provides.build: CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o: CMakeFiles/singleImgEval.dir/flags.make
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o: /home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o -c /home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp
+CMakeFiles/singleImgEval.dir/filterbank.cpp.o: CMakeFiles/singleImgEval.dir/flags.make
+CMakeFiles/singleImgEval.dir/filterbank.cpp.o: ../filterbank.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/singleImgEval.dir/filterbank.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/singleImgEval.dir/filterbank.cpp.o -c /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/filterbank.cpp
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp > CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.i
+CMakeFiles/singleImgEval.dir/filterbank.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/singleImgEval.dir/filterbank.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/filterbank.cpp > CMakeFiles/singleImgEval.dir/filterbank.cpp.i
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.s
+CMakeFiles/singleImgEval.dir/filterbank.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/singleImgEval.dir/filterbank.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/filterbank.cpp -o CMakeFiles/singleImgEval.dir/filterbank.cpp.s
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o.requires:
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o.requires
+CMakeFiles/singleImgEval.dir/filterbank.cpp.o.requires:
+.PHONY : CMakeFiles/singleImgEval.dir/filterbank.cpp.o.requires
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o.provides: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o.requires
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o.provides.build
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o.provides
+CMakeFiles/singleImgEval.dir/filterbank.cpp.o.provides: CMakeFiles/singleImgEval.dir/filterbank.cpp.o.requires
+	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/filterbank.cpp.o.provides.build
+.PHONY : CMakeFiles/singleImgEval.dir/filterbank.cpp.o.provides
 
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o.provides.build: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o: CMakeFiles/singleImgEval.dir/flags.make
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o: /home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o -c /home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp > CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.i
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.s
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o.requires:
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o.requires
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o.provides: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o.requires
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o.provides.build
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o.provides
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o.provides.build: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o: CMakeFiles/singleImgEval.dir/flags.make
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o: /home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o -c /home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp > CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.i
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.s
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o.requires:
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o.requires
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o.provides: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o.requires
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o.provides.build
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o.provides
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o.provides.build: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o: CMakeFiles/singleImgEval.dir/flags.make
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o: /home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o -c /home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp > CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.i
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.s
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o.requires:
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o.requires
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o.provides: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o.requires
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o.provides.build
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o.provides
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o.provides.build: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o: CMakeFiles/singleImgEval.dir/flags.make
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o: /home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o -c /home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp > CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.i
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp -o CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.s
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o.requires:
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o.requires
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o.provides: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o.requires
-	$(MAKE) -f CMakeFiles/singleImgEval.dir/build.make CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o.provides.build
-.PHONY : CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o.provides
-
-CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o.provides.build: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o
+CMakeFiles/singleImgEval.dir/filterbank.cpp.o.provides.build: CMakeFiles/singleImgEval.dir/filterbank.cpp.o
 
 # Object files for target singleImgEval
 singleImgEval_OBJECTS = \
-"CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o" \
-"CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o" \
-"CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o" \
-"CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o" \
-"CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o" \
-"CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o"
+"CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o" \
+"CMakeFiles/singleImgEval.dir/filterbank.cpp.o"
 
 # External object files for target singleImgEval
 singleImgEval_EXTERNAL_OBJECTS =
 
-singleImgEval: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o
-singleImgEval: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o
-singleImgEval: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o
-singleImgEval: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o
-singleImgEval: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o
-singleImgEval: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o
+singleImgEval: CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o
+singleImgEval: CMakeFiles/singleImgEval.dir/filterbank.cpp.o
 singleImgEval: CMakeFiles/singleImgEval.dir/build.make
 singleImgEval: /usr/local/lib/libopencv_videostab.so.2.4.9
 singleImgEval: /usr/local/lib/libopencv_video.so.2.4.9
@@ -251,12 +151,8 @@ singleImgEval: CMakeFiles/singleImgEval.dir/link.txt
 CMakeFiles/singleImgEval.dir/build: singleImgEval
 .PHONY : CMakeFiles/singleImgEval.dir/build
 
-CMakeFiles/singleImgEval.dir/requires: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/singleImgEval.cpp.o.requires
-CMakeFiles/singleImgEval.dir/requires: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/filterbank.cpp.o.requires
-CMakeFiles/singleImgEval.dir/requires: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgCollection.cpp.o.requires
-CMakeFiles/singleImgEval.dir/requires: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/modelBuild.cpp.o.requires
-CMakeFiles/singleImgEval.dir/requires: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/imgFunctions.cpp.o.requires
-CMakeFiles/singleImgEval.dir/requires: CMakeFiles/singleImgEval.dir/home/james-tt/Desktop/MyFilterbankCode/multiDimen/dictCreation.cpp.o.requires
+CMakeFiles/singleImgEval.dir/requires: CMakeFiles/singleImgEval.dir/singleImgEval.cpp.o.requires
+CMakeFiles/singleImgEval.dir/requires: CMakeFiles/singleImgEval.dir/filterbank.cpp.o.requires
 .PHONY : CMakeFiles/singleImgEval.dir/requires
 
 CMakeFiles/singleImgEval.dir/clean:
@@ -264,6 +160,6 @@ CMakeFiles/singleImgEval.dir/clean:
 .PHONY : CMakeFiles/singleImgEval.dir/clean
 
 CMakeFiles/singleImgEval.dir/depend:
-	cd /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/CMakeFiles/singleImgEval.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build/CMakeFiles/singleImgEval.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/singleImgEval.dir/depend
 

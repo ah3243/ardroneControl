@@ -1,4 +1,4 @@
-# Install script for directory: /home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE
+# Install script for directory: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/james-tt/Desktop/MyFilterbankCode/multiDimen/TESTINGCMAKE/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/james-tt/Desktop/MyFilterbankCode/ARDRONE/OpenCVMod/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()
