@@ -12,22 +12,20 @@
 
     var pngStream = client.getPngStream();
 
-
     // Object to hold main vars and parameters
     var droneState = {
               cont: 0, // Flag to ensure only one image test at a time
               nav:0, // Var to store nav return values
               test:true, // True == Drone will not fly, False == Drone will fly
-              fwdSpeed:0, // Param to govern speed of forward movement
-              rotSpeed:0,  // Param to govern speed of rotation
+              fwdSpeed:0.02, // Param to govern speed of forward movement
+              rotSpeedLeft:0.1, // Param to govern left speed of lateral movement
+              rotSpeedRight:0.02,  // Param to govern right speed or lateral movement
               imgFrameNum:0, // Current frame number (used for naming)
               // methods to increase or decrease cont flag value
               incre:function(){
-                console.log("cont Incrementing");
                 this.cont +=1;
               },
               decre:function(){
-                console.log("cont Decrementing");
                 this.cont -=1;
               },
               // Increment current Frame Number by 1
@@ -39,8 +37,14 @@
     //////////////////////////////////////////////////////
     //////////////////// FUNCTIONS ///////////////////////
     //////////////////////////////////////////////////////
+
+    // Execute specific drone maneuvers depending on analysis output
     function setNav(droneState, output, client){
       droneState.nav = output;
+      var forwardSpeed = droneState.fwdSpeed;
+      var rotSpeedL = droneState.rotSpeedLeft;
+      var rotSpeedR = droneState.rotSpeedRight;
+      console.log('This is the Lateral movement Right: ' + rotSpeedR + ' Lateral movement Left: ' + rotSpeedL);
       console.log('This is the output:..' + output + ' and DroneState.nav: ' + droneState.nav);
       if(output==0){
         console.log("This is the Value with 0: " + output);
@@ -64,23 +68,32 @@
         console.log("\n\nGoing FORWARD..\n\n");
         if(!droneState.test){
           client.after(1000, function(){
-            this.forward(droneState.fwdSpeed);
+            this.front(forwardSpeed);
+          })
+          .after(3000, function() {
+            this.stop();
           });
         }
       }
       else if(output==3){
         console.log("\n\nGoing LEFT..\n\n");
         if(!droneState.test){
-          client.after(500, function(){
-            this.left(droneState.rotSpeed);
+          client.after(1000, function(){
+            this.left(rotSpeedL);
+          })
+          .after(3000, function() {
+            this.stop();
           });
         }
       }
       else if(output==4){
         console.log("\n\nGoing RIGHT..\n\n");
         if(!droneState.test){
-          client.after(500, function(){
-            this.right(droneState.rotSpeed);
+          client.after(1000, function(){
+            this.right(rotSpeedR);
+          })
+          .after(3000, function() {
+            this.stop();
           });
         }
       }
@@ -98,8 +111,8 @@
     // Set number of processes flag after Opencv script completion
     function extraArgs(droneState, stdout, stderr, client, callback){
       setNav(droneState, stdout, client);
-      console.log('Script stderr:..' + stderr);
-      console.log('Script stdout: ' + stdout);
+      // console.log('Script stderr:..' + stderr);
+      // console.log('Script stdout: ' + stdout);
       droneState.decre();
     }
     // Run Opencv Script decrementing the number of current processes running by 1 when completed
@@ -132,7 +145,7 @@
         opencvScript(exec, imageName, droneState, client);
       });
     };
-
+    // Run main program
     function RunProgram(exec, pngStream, droneState, client, callback){
       exec('sh ~/Desktop/MyFilterbankCode/ARDRONE/prepScript.sh ', function(err, stdout, stderr){
         console.log('PREPSCRIPT_stdout: ' + stdout);
@@ -151,11 +164,32 @@
       });
     }
 
+    // Process exit callback function
+    function end(){
+      process.exit(1);
+    }
+    // Check that forward speed is below certain value
+    function speedCheck(droneState, callback){
+      if(droneState.fwdSpeed>0.1){
+        console.log("\nWARNING: Forward value exceeding 0.1 limit.\nExiting.\n\n");
+        client.after(3000, function(){
+          this.stop();
+        })
+        .after(1000, function(){
+          this.land();
+        });
+        callback();
+      }
+    }
+
     //////////////////////////////////////////////////////
     //////////////////// PROGRAM /////////////////////////
     //////////////////////////////////////////////////////
 
-    // Takeoff
+    // Validate that forward speed is within safe range
+    speedCheck(droneState, end);
+
+    // Takeoff if not a static test
     if(!droneState.test){
       console.log('TAKING OFF!!\n');
       client.takeoff();
@@ -164,4 +198,14 @@
       });
     }
 
-    RunProgram(exec, pngStream, droneState, client, startProgram);
+  // Return ar drone parameters
+  client.on('navdata', function(d) {
+    // console.log(d);
+    // Use if statement to allow access to ar drone parameters
+    // if (d.demo) {
+    //     console.log(d.demo.batteryPercentage);
+    // }
+  });
+
+    // Run main program
+   RunProgram(exec, pngStream, droneState, client, startProgram);

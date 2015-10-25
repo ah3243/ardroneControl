@@ -237,7 +237,7 @@ void textonMatcher(Mat& clus, Mat dictionary, vector<double>& disVec){
 }
 
 // Take the average of each classes iterations and return the best match
-string avgIterResults(map<string, vector<double> > results){
+string avgIterResults(map<string, vector<double> > results, string curSegment){
   // Store best Match distance and class name
   double bestMatch = DBL_MAX;
   string match = "noMatch";
@@ -255,7 +255,8 @@ string avgIterResults(map<string, vector<double> > results){
       match = itrRes.first;
     }
   }
-  fprintf(stderr,"This was the best match: %s distance: %f\n",match.c_str(), bestMatch);
+  // Output the best match and current segment
+   fprintf(stderr,"%s best match: %s distance: %f\n", curSegment.c_str(), match.c_str(), bestMatch);
   return match;
 }
 
@@ -418,6 +419,7 @@ int directionHandle(string imgPath, map<string, int> params, map<string, double>
   for(int i=0;i<segments.size();i++){
     map<string, vector<double> > tmpVals; // For storing all best matches between classes over several iterations
     int repeats = params["testRepeats"];
+    vector<string> curSegNme = {"TopLeft", "Bottom Left", "Top Middle", "Bottom Middle", "Top Right", "Bottom Right"};
 
     // Take repeat readings of segments taking the mean of the best results for each class
     for(int k=0;k<repeats;k++){
@@ -453,7 +455,7 @@ int directionHandle(string imgPath, map<string, int> params, map<string, double>
       }
     }
     // Average results and return first and return first and second
-    string bestMatch = avgIterResults(tmpVals);
+    string bestMatch = avgIterResults(tmpVals, curSegNme[i].c_str());
     segResults(bestMatch, i);
   }
   return navOutput(scale, goal);
