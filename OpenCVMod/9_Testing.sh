@@ -11,7 +11,7 @@
 
   #---------Program and Parameters----------#
   #GOAL CLASS#
-  goal="unevenBricks"
+  goal="grass"
   #Image Scale
   scale=8
   #Corresponding Segment Size to maintain 6 segments
@@ -35,7 +35,5 @@
     imgLocation="$1"
   fi
 
-  echo INSIDE SCRIPT. Cropsize: $cropSize Scale: $scale
-
   # 1:"flag" 2:"image path" 3:"scale" 4:"cropSize" 5:"goal"
- echo returnValue=$(OpenCVMod/build/singleImgEval $imgLocation $scale $cropSize $goal)
+ echo $(OpenCVMod/build/singleImgEval $imgLocation $scale $cropSize $goal)

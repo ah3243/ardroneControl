@@ -473,7 +473,7 @@ int main(int argc, char** argv){
   int flags = KMEANS_PP_CENTERS;
 
   // Print out input parameters
-  fprintf(stderr,"argc: %d\n", argc);
+  fprintf(stderr,"\nargc: %d\n", argc);
   fprintf(stderr,"These are the inputs: \n");
 
   for(int a =0;a<argc;a++){
