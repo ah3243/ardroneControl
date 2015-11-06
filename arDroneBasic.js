@@ -5,6 +5,54 @@
     // for emergancy
     var keypress = require('keypress');
 
+    keypress(process.stdin);
+
+    var keys = {
+      'space': function(){
+        console.log('Takeoff!');
+       client.takeoff();
+      },
+      'l': function(){
+        console.log('Land!');
+        client.stop();
+        client.land();
+      },
+      'up': function(){
+        console.log('Move Forward!');
+        client.front(0.1);
+      },
+      'down': function(){
+        console.log('Move Backwards!');
+        client.back(0.1);
+      },
+      'right': function(){
+        console.log('Move Left!');
+        client.left(0.1);
+      },
+      'left': function(){
+        console.log('Move Right!');
+        client.right(0.1);
+      },
+      'pageup': function(){
+        console.log('Move Down!');
+        client.down(0.5);
+      },
+      'pagedown': function(){
+        console.log('Move Up!');
+        // client.up(0.5);
+      }
+    }
+    // In emergancy quit land drone and exit
+    var quit = function(client){
+      console.log('Quitting');
+      process.stdin.pause();
+
+      client.stop();
+      client.land();
+      client._udpControl.close();
+    }
+
+
     // PNG Vars
     var arDrone = require('ar-drone');
     var client = arDrone.createClient();
@@ -108,11 +156,21 @@
       }
     }
 
+    function manNav(client, keypress){
+      process.stdin.on('keypress', function (ch, key) {
+        // console.log('got "keypress"', key.name);
+        if(key && keys[key.name]){ keys[key.name](); }
+        if(key && key.ctrl && key.name == 'c') { quit(); }
+      });
+
+      process.stdin.setRawMode(true);
+      process.stdin.resume();
+    }
     // Set number of processes flag after Opencv script completion
     function extraArgs(droneState, stdout, stderr, client, callback){
       setNav(droneState, stdout, client);
-      // console.log('Script stderr:..' + stderr);
-      // console.log('Script stdout: ' + stdout);
+      console.log('Script stderr:..' + stderr);
+      console.log('Script stdout: ' + stdout);
       droneState.decre();
     }
     // Run Opencv Script decrementing the number of current processes running by 1 when completed
@@ -141,10 +199,46 @@
         if (err) {
           console.log('Error saving PNG: ' + err);
         }
+        var battery;
+        // Output nav Data
+        getHeight(client, battery);
         // Start opencv Script
         opencvScript(exec, imageName, droneState, client);
       });
     };
+
+    // Process exit callback function
+    function end(){
+      process.exit(1);
+    }
+    // Check that forward speed is below certain value
+    function speedCheck(droneState, callback){
+      if(droneState.fwdSpeed>0.1){
+        console.log("\nWARNING: Forward value exceeding 0.1 limit.\nExiting.\n\n");
+        client.after(3000, function(){
+          this.stop();
+        })
+        .after(1000, function(){
+          this.land();
+        });
+        callback();
+      }
+    }
+  function getHeight(client, x){
+    // Return ar drone parameters
+    client.on('navdata', function(d) {
+      // console.log(d);
+      // Use if statement to allow access to ar drone parameters
+      if (d.demo) {
+        if(d.demo){
+          // console.log('Battery Percentage: ' + d.demo.batteryPercentage);
+          // console.log('Altitude: ' + d.demo.altitude);
+          // console.log('Altitude(m): ' + d.demo.altitudeMeters);
+        }
+      }
+    });
+  }
+
     // Run main program
     function RunProgram(exec, pngStream, droneState, client, callback){
       exec('sh ~/Desktop/MyFilterbankCode/ARDRONE/prepScript.sh ', function(err, stdout, stderr){
@@ -164,27 +258,12 @@
       });
     }
 
-    // Process exit callback function
-    function end(){
-      process.exit(1);
-    }
-    // Check that forward speed is below certain value
-    function speedCheck(droneState, callback){
-      if(droneState.fwdSpeed>0.1){
-        console.log("\nWARNING: Forward value exceeding 0.1 limit.\nExiting.\n\n");
-        client.after(3000, function(){
-          this.stop();
-        })
-        .after(1000, function(){
-          this.land();
-        });
-        callback();
-      }
-    }
-
     //////////////////////////////////////////////////////
     //////////////////// PROGRAM /////////////////////////
     //////////////////////////////////////////////////////
+
+    // Manual Control
+    manNav(client, keypress);
 
     // Validate that forward speed is within safe range
     speedCheck(droneState, end);
@@ -198,14 +277,5 @@
       });
     }
 
-  // Return ar drone parameters
-  client.on('navdata', function(d) {
-    // console.log(d);
-    // Use if statement to allow access to ar drone parameters
-    // if (d.demo) {
-    //     console.log(d.demo.batteryPercentage);
-    // }
-  });
-
-    // Run main program
+     // Run main program
    RunProgram(exec, pngStream, droneState, client, startProgram);

@@ -25,12 +25,12 @@
 #include <stdlib.h>
 #include <boost/filesystem.hpp>
 #include <assert.h>
-#include <chrono>  // time measurement
-#include <thread>  // time measurement
 #include <map>
+#include <chrono> // Time Measurement
 
 #include "filterbank.h" // Filterbank Handling Functions
 
+using namespace std::chrono; // Time measurement
 using namespace cv;
 using namespace std;
 
@@ -256,7 +256,7 @@ string avgIterResults(map<string, vector<double> > results, string curSegment){
     }
   }
   // Output the best match and current segment
-   fprintf(stderr,"%s best match: %s distance: %f\n", curSegment.c_str(), match.c_str(), bestMatch);
+//   fprintf(stderr,"%s best match: %s distance: %f\n", curSegment.c_str(), match.c_str(), bestMatch);
   return match;
 }
 
@@ -468,6 +468,7 @@ int main(int argc, char** argv){
     ERR("Incorrect number of inputs detected. Exiting.");
     exit(1);
   }
+  high_resolution_clock::time_point t1 = high_resolution_clock::now();
 
   int kmeansIteration = 100000;
   int kmeansEpsilon = 0.000001;
@@ -500,5 +501,11 @@ int main(int argc, char** argv){
     fprintf(stderr,"\n\nOutput Value..%d\n", navOut);
 
     fprintf(stdout, "%d",navOut); // Output return value to stdout
+
+    // Calculate Execution Time
+    high_resolution_clock::time_point t2 = high_resolution_clock::now();
+    double duration = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
+    fprintf(stderr, "Opencv Execution Time Decimal: %f\n", duration/1000 );
+
     return 0;
 }

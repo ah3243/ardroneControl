@@ -13,7 +13,7 @@
   #GOAL CLASS#
   goal="grass"
   #Image Scale
-  scale=8
+  scale=9
   #Corresponding Segment Size to maintain 6 segments
   if [ "$scale" -eq 9 ]
   then

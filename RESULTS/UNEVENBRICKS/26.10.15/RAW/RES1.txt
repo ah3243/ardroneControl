@@ -1,0 +1,813 @@
+//UNEVENBRICKS//
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame1.png, 2: 8, 3: 70, 4: grass
+grass : 7.100000
+hedge : 8.000000
+pavement : 2.300000
+rectPaving : 6.200000
+smallBricks : 7.900000
+unevenBricks : 7.000000
+grass : 5.800000
+hedge : 7.200000
+pavement : 4.200000
+rectPaving : 6.200000
+smallBricks : 7.700000
+unevenBricks : 6.100000
+grass : 6.700000
+hedge : 7.900000
+pavement : 3.500000
+rectPaving : 6.700000
+smallBricks : 7.500000
+unevenBricks : 7.800000
+grass : 6.300000
+hedge : 6.500000
+pavement : 3.000000
+rectPaving : 5.700000
+smallBricks : 7.600000
+unevenBricks : 7.200000
+grass : 6.300000
+hedge : 8.000000
+pavement : 3.250000
+rectPaving : 6.150000
+smallBricks : 7.900000
+unevenBricks : 8.000000
+grass : 5.800000
+hedge : 7.000000
+pavement : 3.500000
+rectPaving : 5.600000
+smallBricks : 6.800000
+unevenBricks : 7.500000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame2.png, 2: 8, 3: 70, 4: grass
+grass : 6.500000
+hedge : 6.400000
+pavement : 7.100000
+rectPaving : 4.600000
+smallBricks : 5.000000
+unevenBricks : 7.000000
+grass : 6.400000
+hedge : 5.600000
+pavement : 6.600000
+rectPaving : 4.000000
+smallBricks : 5.400000
+unevenBricks : 5.500000
+grass : 7.100000
+hedge : 6.100000
+pavement : 6.600000
+rectPaving : 5.000000
+smallBricks : 3.000000
+unevenBricks : 4.800000
+grass : 7.000000
+hedge : 7.200000
+pavement : 6.700000
+rectPaving : 5.500000
+smallBricks : 5.700000
+unevenBricks : 5.300000
+grass : 7.300000
+hedge : 6.300000
+pavement : 7.500000
+rectPaving : 5.800000
+smallBricks : 5.300000
+unevenBricks : 7.000000
+grass : 6.600000
+hedge : 7.700000
+pavement : 6.700000
+rectPaving : 5.500000
+smallBricks : 6.200000
+unevenBricks : 6.900000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame3.png, 2: 8, 3: 70, 4: grass
+grass : 7.200000
+hedge : 7.000000
+pavement : 7.100000
+rectPaving : 5.700000
+smallBricks : 3.500000
+unevenBricks : 6.200000
+grass : 6.700000
+hedge : 6.000000
+pavement : 6.400000
+rectPaving : 4.200000
+smallBricks : 4.800000
+unevenBricks : 5.300000
+grass : 6.500000
+hedge : 6.300000
+pavement : 6.500000
+rectPaving : 5.700000
+smallBricks : 2.900000
+unevenBricks : 6.300000
+grass : 7.300000
+hedge : 7.900000
+pavement : 6.700000
+rectPaving : 6.100000
+smallBricks : 6.100000
+unevenBricks : 5.500000
+grass : 6.400000
+hedge : 6.400000
+pavement : 6.300000
+rectPaving : 4.300000
+smallBricks : 4.800000
+unevenBricks : 5.700000
+grass : 7.000000
+hedge : 7.700000
+pavement : 6.700000
+rectPaving : 5.700000
+smallBricks : 6.200000
+unevenBricks : 6.600000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame4.png, 2: 8, 3: 70, 4: grass
+grass : 7.100000
+hedge : 6.400000
+pavement : 7.100000
+rectPaving : 5.200000
+smallBricks : 3.300000
+unevenBricks : 6.000000
+grass : 6.200000
+hedge : 5.900000
+pavement : 6.100000
+rectPaving : 4.700000
+smallBricks : 4.200000
+unevenBricks : 5.500000
+grass : 7.100000
+hedge : 6.400000
+pavement : 6.900000
+rectPaving : 5.700000
+smallBricks : 4.700000
+unevenBricks : 6.900000
+grass : 6.500000
+hedge : 8.200000
+pavement : 6.700000
+rectPaving : 4.500000
+smallBricks : 5.700000
+unevenBricks : 6.300000
+grass : 7.300000
+hedge : 5.500000
+pavement : 6.900000
+rectPaving : 6.200000
+smallBricks : 4.800000
+unevenBricks : 6.400000
+grass : 6.200000
+hedge : 7.400000
+pavement : 6.300000
+rectPaving : 4.600000
+smallBricks : 6.400000
+unevenBricks : 6.000000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame5.png, 2: 8, 3: 70, 4: grass
+grass : 7.200000
+hedge : 6.400000
+pavement : 7.100000
+rectPaving : 5.500000
+smallBricks : 4.000000
+unevenBricks : 6.400000
+grass : 6.400000
+hedge : 6.600000
+pavement : 7.000000
+rectPaving : 5.800000
+smallBricks : 4.200000
+unevenBricks : 6.100000
+grass : 6.600000
+hedge : 6.000000
+pavement : 6.400000
+rectPaving : 5.200000
+smallBricks : 4.700000
+unevenBricks : 5.300000
+grass : 6.800000
+hedge : 7.100000
+pavement : 6.600000
+rectPaving : 5.200000
+smallBricks : 5.600000
+unevenBricks : 6.200000
+grass : 6.900000
+hedge : 5.800000
+pavement : 6.500000
+rectPaving : 4.600000
+smallBricks : 4.600000
+unevenBricks : 5.100000
+grass : 6.700000
+hedge : 8.000000
+pavement : 6.200000
+rectPaving : 5.900000
+smallBricks : 6.900000
+unevenBricks : 6.100000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame6.png, 2: 8, 3: 70, 4: grass
+grass : 6.600000
+hedge : 6.300000
+pavement : 6.900000
+rectPaving : 5.100000
+smallBricks : 3.300000
+unevenBricks : 6.600000
+grass : 6.400000
+hedge : 6.300000
+pavement : 7.000000
+rectPaving : 4.000000
+smallBricks : 5.200000
+unevenBricks : 5.200000
+grass : 5.900000
+hedge : 6.700000
+pavement : 6.100000
+rectPaving : 4.200000
+smallBricks : 5.500000
+unevenBricks : 5.200000
+grass : 6.800000
+hedge : 7.500000
+pavement : 6.100000
+rectPaving : 5.600000
+smallBricks : 6.400000
+unevenBricks : 6.300000
+grass : 6.000000
+hedge : 6.100000
+pavement : 6.900000
+rectPaving : 4.200000
+smallBricks : 5.900000
+unevenBricks : 4.900000
+grass : 6.100000
+hedge : 7.200000
+pavement : 6.000000
+rectPaving : 4.600000
+smallBricks : 6.200000
+unevenBricks : 5.900000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame7.png, 2: 8, 3: 70, 4: grass
+grass : 7.100000
+hedge : 6.900000
+pavement : 7.400000
+rectPaving : 5.300000
+smallBricks : 2.900000
+unevenBricks : 6.600000
+grass : 6.700000
+hedge : 7.200000
+pavement : 7.300000
+rectPaving : 5.500000
+smallBricks : 6.600000
+unevenBricks : 5.000000
+grass : 5.800000
+hedge : 6.100000
+pavement : 6.300000
+rectPaving : 4.600000
+smallBricks : 3.800000
+unevenBricks : 6.600000
+grass : 6.600000
+hedge : 7.900000
+pavement : 5.800000
+rectPaving : 4.600000
+smallBricks : 5.700000
+unevenBricks : 7.000000
+grass : 7.000000
+hedge : 6.200000
+pavement : 7.200000
+rectPaving : 5.600000
+smallBricks : 3.200000
+unevenBricks : 6.000000
+grass : 6.400000
+hedge : 6.500000
+pavement : 5.900000
+rectPaving : 5.800000
+smallBricks : 6.300000
+unevenBricks : 6.800000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame8.png, 2: 8, 3: 70, 4: grass
+grass : 7.600000
+hedge : 7.100000
+pavement : 7.400000
+rectPaving : 5.200000
+smallBricks : 3.000000
+unevenBricks : 6.800000
+grass : 6.300000
+hedge : 5.900000
+pavement : 6.400000
+rectPaving : 5.400000
+smallBricks : 5.300000
+unevenBricks : 6.300000
+grass : 6.800000
+hedge : 5.900000
+pavement : 6.100000
+rectPaving : 5.000000
+smallBricks : 3.800000
+unevenBricks : 5.800000
+grass : 7.300000
+hedge : 7.500000
+pavement : 6.700000
+rectPaving : 4.900000
+smallBricks : 6.300000
+unevenBricks : 6.600000
+grass : 6.200000
+hedge : 5.600000
+pavement : 6.900000
+rectPaving : 4.500000
+smallBricks : 4.100000
+unevenBricks : 6.000000
+grass : 6.800000
+hedge : 7.200000
+pavement : 6.400000
+rectPaving : 4.600000
+smallBricks : 6.700000
+unevenBricks : 6.400000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame9.png, 2: 8, 3: 70, 4: grass
+grass : 6.200000
+hedge : 5.200000
+pavement : 6.100000
+rectPaving : 4.900000
+smallBricks : 4.600000
+unevenBricks : 5.000000
+grass : 6.100000
+hedge : 6.000000
+pavement : 6.100000
+rectPaving : 5.100000
+smallBricks : 5.700000
+unevenBricks : 5.700000
+grass : 6.300000
+hedge : 7.600000
+pavement : 7.300000
+rectPaving : 6.000000
+smallBricks : 6.000000
+unevenBricks : 3.500000
+grass : 6.800000
+hedge : 7.600000
+pavement : 6.700000
+rectPaving : 6.200000
+smallBricks : 6.500000
+unevenBricks : 6.000000
+grass : 5.100000
+hedge : 7.400000
+pavement : 6.500000
+rectPaving : 4.800000
+smallBricks : 5.800000
+unevenBricks : 5.200000
+grass : 5.500000
+hedge : 5.000000
+pavement : 5.600000
+rectPaving : 3.700000
+smallBricks : 5.600000
+unevenBricks : 5.000000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame10.png, 2: 8, 3: 70, 4: grass
+grass : 6.400000
+hedge : 6.600000
+pavement : 6.700000
+rectPaving : 6.100000
+smallBricks : 4.600000
+unevenBricks : 5.500000
+grass : 5.600000
+hedge : 6.700000
+pavement : 6.700000
+rectPaving : 4.700000
+smallBricks : 5.700000
+unevenBricks : 4.000000
+grass : 6.100000
+hedge : 5.500000
+pavement : 6.200000
+rectPaving : 4.600000
+smallBricks : 4.500000
+unevenBricks : 4.200000
+grass : 4.400000
+hedge : 6.500000
+pavement : 5.700000
+rectPaving : 3.700000
+smallBricks : 5.400000
+unevenBricks : 5.600000
+grass : 6.300000
+hedge : 5.700000
+pavement : 7.300000
+rectPaving : 5.400000
+smallBricks : 5.700000
+unevenBricks : 4.000000
+grass : 5.300000
+hedge : 6.800000
+pavement : 5.900000
+rectPaving : 3.800000
+smallBricks : 5.300000
+unevenBricks : 5.800000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+(node) warning: possible EventEmitter memory leak detected. 11 navdata listeners added. Use emitter.setMaxListeners() to increase limit.
+Trace
+    at Client.addListener (events.js:179:15)
+    at getHeight (/home/james-tt/Desktop/MyFilterbankCode/ARDRONE/arDroneBasic.js:267:12)
+    at /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/arDroneBasic.js:204:9
+    at FSReqWrap.oncomplete (fs.js:95:15)
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame11.png, 2: 8, 3: 70, 4: grass
+grass : 6.700000
+hedge : 6.400000
+pavement : 6.600000
+rectPaving : 5.100000
+smallBricks : 4.200000
+unevenBricks : 5.300000
+grass : 6.600000
+hedge : 5.900000
+pavement : 6.900000
+rectPaving : 4.000000
+smallBricks : 5.600000
+unevenBricks : 4.600000
+grass : 6.500000
+hedge : 6.500000
+pavement : 7.500000
+rectPaving : 4.600000
+smallBricks : 5.400000
+unevenBricks : 4.600000
+grass : 6.800000
+hedge : 7.800000
+pavement : 5.800000
+rectPaving : 5.200000
+smallBricks : 6.100000
+unevenBricks : 6.800000
+grass : 6.000000
+hedge : 6.900000
+pavement : 7.800000
+rectPaving : 5.800000
+smallBricks : 6.500000
+unevenBricks : 5.000000
+grass : 7.100000
+hedge : 7.300000
+pavement : 6.400000
+rectPaving : 5.700000
+smallBricks : 7.200000
+unevenBricks : 6.200000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame12.png, 2: 8, 3: 70, 4: grass
+grass : 6.400000
+hedge : 6.000000
+pavement : 7.000000
+rectPaving : 4.600000
+smallBricks : 5.000000
+unevenBricks : 6.100000
+grass : 6.000000
+hedge : 6.500000
+pavement : 7.200000
+rectPaving : 5.600000
+smallBricks : 5.500000
+unevenBricks : 4.000000
+grass : 6.300000
+hedge : 6.400000
+pavement : 6.900000
+rectPaving : 4.100000
+smallBricks : 5.600000
+unevenBricks : 5.200000
+grass : 6.200000
+hedge : 7.400000
+pavement : 6.500000
+rectPaving : 5.600000
+smallBricks : 5.500000
+unevenBricks : 5.300000
+grass : 6.000000
+hedge : 5.700000
+pavement : 6.200000
+rectPaving : 4.700000
+smallBricks : 5.300000
+unevenBricks : 5.800000
+grass : 5.700000
+hedge : 7.200000
+pavement : 7.300000
+rectPaving : 4.900000
+smallBricks : 5.800000
+unevenBricks : 4.600000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
+
+Script stdout:
+2
+
+
+NEWTEST, cont= 0
+This is the Lateral movement Right: 0.02 Lateral movement Left: 0.1
+This is the output:..
+2
+ and DroneState.nav:
+2
+
+
+
+Going FORWARD..
+
+
+Script stderr:..
+argc: 5
+These are the inputs:
+, 0: OpenCVMod/build/singleImgEval, 1: /home/james-tt/Desktop/MyFilterbankCode/ARDRONE/Images/frame13.png, 2: 8, 3: 70, 4: grass
+grass : 5.700000
+hedge : 7.700000
+pavement : 3.400000
+rectPaving : 5.900000
+smallBricks : 7.200000
+unevenBricks : 6.700000
+grass : 6.400000
+hedge : 7.100000
+pavement : 2.950000
+rectPaving : 6.400000
+smallBricks : 7.600000
+unevenBricks : 7.200000
+grass : 5.700000
+hedge : 7.900000
+pavement : 2.550000
+rectPaving : 6.950000
+smallBricks : 7.900000
+unevenBricks : 6.500000
+grass : 5.100000
+hedge : 6.400000
+pavement : 3.600000
+rectPaving : 5.300000
+smallBricks : 7.200000
+unevenBricks : 6.400000
+grass : 6.500000
+hedge : 7.400000
+pavement : 3.800000
+rectPaving : 6.150000
+smallBricks : 6.800000
+unevenBricks : 7.100000
+grass : 5.100000
+hedge : 6.400000
+pavement : 2.700000
+rectPaving : 4.800000
+smallBricks : 7.700000
+unevenBricks : 5.100000
+This is the goal: grass
+
+Move Forward
+
+
+Output Value..2
