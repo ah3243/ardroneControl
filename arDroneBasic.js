@@ -27,19 +27,19 @@
       },
       'right': function(){
         console.log('Move Left!');
-        client.left(0.1);
+        client.right(0.1);
       },
       'left': function(){
         console.log('Move Right!');
-        client.right(0.1);
+        client.left(0.1);
       },
       'pageup': function(){
         console.log('Move Down!');
-        client.down(0.5);
+        // client.up(0.5);
       },
       'pagedown': function(){
         console.log('Move Up!');
-        // client.up(0.5);
+        client.down(0.5);
       }
     }
     // In emergancy quit land drone and exit
